@@ -1,0 +1,39 @@
+# 1. 의존성 (Dependencies)
+# 팀원들은 각자 로컬에서 'npm install'을 실행해야 하므로 제외합니다.
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# 2. 빌드 결과물 (Next.js & Production)
+# 로컬 실행 시 생성되는 캐시와 빌드 파일입니다.
+/.next/
+/out/
+/build
+*.tsbuildinfo
+next-env.d.ts
+
+# 3. 환경 변수 (Environment Files)
+# 보안상 실제 .env는 공유하지 않으며, 팀원들은 .env.example을 복사해서 사용해야 합니다.
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# 4. 운영체제 및 에러 로그 (OS & Debug)
+.DS_Store
+*.pem
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# 5. IDE 및 설정 도구
+.vscode/
+.idea/
+.vercel

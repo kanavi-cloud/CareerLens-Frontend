@@ -18,8 +18,7 @@ npm run dev
 # 접속 주소: http://localhost:3000
 ```
 - 프로젝트 파일 구조 가이드
-팀원들이 각 폴더의 역할을 쉽게 이해하도록 정리한 구조입니다.
-
+  
 ```
 src/
 ├── app/            # Next.js App Router (페이지 경로 및 전역 설정)

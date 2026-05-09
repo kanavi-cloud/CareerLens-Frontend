@@ -1,19 +1,16 @@
 README
 - 프로젝트 실행 방법
 1. 코드 내려받기
-```
-Bash
+```Bash
 git clone https://github.com/kanavi-cloud/CareerLens-Frontend
 cd Frontend
 ```
 2. 라이브러리 설치
-```
-Bash
+```Bash
 npm install
 ```
-4. 로컬 서버 실행
-```
-Bash
+3. 로컬 서버 실행
+```Bash
 npm run dev
 # 접속 주소: http://localhost:3000
 ```

@@ -1,19 +1,26 @@
 README
 - 프로젝트 실행 방법
 1. 코드 내려받기
+```
 Bash
 git clone https://github.com/kanavi-cloud/CareerLens-Frontend
-cd CareerLens-Frontend
+cd Frontend
+```
 2. 라이브러리 설치
+```
 Bash
 npm install
-3. 로컬 서버 실행
+```
+4. 로컬 서버 실행
+```
 Bash
 npm run dev
-접속 주소: http://localhost:3000
-
+# 접속 주소: http://localhost:3000
+```
 - 프로젝트 파일 구조 가이드
+팀원들이 각 폴더의 역할을 쉽게 이해하도록 정리한 구조입니다.
 
+```
 src/
 ├── app/            # Next.js App Router (페이지 경로 및 전역 설정)
 │   ├── layout.tsx  # 최상위 레이아웃 (폰트, 전역 스타일 연결)
@@ -27,7 +34,7 @@ src/
 ├── hooks/          # 재사용되는 상태 로직 및 이벤트 핸들러
 ├── lib/            # 외부 라이브러리 설정 및 공통 유틸 함수
 └── types/          # TypeScript 인터페이스 및 타입 정의
-
+```
 - shadcn/ui 협업 및 사용 가이드
 1. 기본 개념
 복사 방식: 라이브러리 전체를 설치하는 것이 아니라, 필요한 컴포넌트 소스코드를 src/components/ui에 직접 내려받아 사용합니다.

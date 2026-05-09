@@ -14,20 +14,20 @@ npm run dev
 
 - 프로젝트 파일 구조 가이드
 
-Plaintext
 src/
 ├── app/            # Next.js App Router (페이지 경로 및 전역 설정)
 │   ├── layout.tsx  # 최상위 레이아웃 (폰트, 전역 스타일 연결)
 │   ├── page.tsx    # 메인 랜딩 페이지
 │   └── globals.css # Tailwind CSS 및 테마 변수 설정
 ├── components/     # UI 구성 요소
-│   ├── ui/         # shadcn/ui 컴포넌트 (수정 없이 혹은 스타일만 수정해서 사용)
-│   ├── common/     # 프로젝트 전역에서 공통으로 쓰는 작은 단위 (Custom Button, Input 등)
-│   ├── layout/     # 페이지의 틀을 잡는 큰 단위 (Navbar, Footer, Sidebar 등)
-│   └── feature/    # 특정 기능 단위의 복합 컴포넌트 (LoginCard, RecommendList 등)
+│   ├── ui/         # shadcn/ui 컴포넌트 (기본 UI 소스)
+│   ├── common/     # 전역 공통 단위 (Custom Button, Input 등)
+│   ├── layout/     # 페이지 틀 구성 (Navbar, Footer 등)
+│   └── feature/    # 특정 기능 단위 복합 컴포넌트 (LoginCard 등)
 ├── hooks/          # 재사용되는 상태 로직 및 이벤트 핸들러
 ├── lib/            # 외부 라이브러리 설정 및 공통 유틸 함수
 └── types/          # TypeScript 인터페이스 및 타입 정의
+
 - shadcn/ui 협업 및 사용 가이드
 1. 기본 개념
 복사 방식: 라이브러리 전체를 설치하는 것이 아니라, 필요한 컴포넌트 소스코드를 src/components/ui에 직접 내려받아 사용합니다.
